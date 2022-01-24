@@ -415,7 +415,7 @@ picture.pict-two {
 .inner-text {
     color: #fff;
     font-family: Verdana,serif;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 button.banner-button.fullwidth-right {
     background-color: #ffffff;
@@ -424,6 +424,67 @@ button.banner-button.fullwidth-right {
 .pulsante-destrs {
     padding-top: 5rem;
 }
+img.bannerimg.responsive {
+    width: 100%;
+    height: auto;
+}
+.fullwidth-grid-banner.yellow {
+    background: linear-gradient(180deg, #FEEAB0 0%, #FFFCF3 100%);
+    align-items: center;
+}
+img.bannerimg.responsive.bowser {
+    max-width: 270px;
+}
+img.bannerimg.responsive.parental {
+    max-width: 130px;
+}
+.middle-picture {
+    display: inline-flex;
+    vertical-align: middle;
+}
+span.middle-text {
+    font-family: Verdana, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #343434;
+}
+.bottom-text {
+    font-family: Verdana,serif;
+}
+.disclaimer {
+    max-width: 1183px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: #343434;
+}
+footer {
+    background: linear-gradient(to top, #e7e7e7 0, #f9f9f9 75%);
+}
+ul.footer-ul {
+    list-style: none;
+    font-family: system-ui;
+}
+h4.titletext {
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+li.footer-li {
+    font-size: 14px;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    background: linear-gradient(to top, #e7e7e7 0, #f9f9f9 75%);
+    max-width: 1183px;
+    margin: 0 auto;
+}
+.blocco-footer {
+    padding: 1rem;
+    font-family: Verdana, serif;
+    color: #484848;
+}
+
 @media (max-width: 898px) {
     .nav-links {
         display: none;
