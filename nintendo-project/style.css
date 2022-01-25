@@ -1,109 +1,136 @@
-
-*{margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* DIDASCALIA */
-  .xsm{font-size:smaller ;}
-  .md{font-size: medium;}
-  .bt{font-size: larger;}
-  .cg{color: rgb(77, 75, 75);}
-  .cr{color: red;}
-  
-  
-  /* NAVBAR SUPERIORE */
-  .nav-superiore{
-      display: flex;
-      width: 100%;
-      height: 60px;
-      border: 1px solid lightgrey;
-  }
-  .left-box{
-      display: flex;
-      width: 50%;
-  }
-  .logo{
-      padding: 15px;
-      width: 20%;
-      height: 100%;
-      background-color: red;
-      
-  }
+}
 
-  .search{
-      display: flex;
-      border-bottom: 2px solid black;
-        height: 30px;
-        margin: 12px 15px 10px 13px;
-  }
-  .search-input{
+/* DIDASCALIA */
+.xsm {
+    font-size: smaller;
+}
+
+.md {
+    font-size: medium;
+}
+
+.bt {
+    font-size: larger;
+}
+
+.cg {
+    color: rgb(77, 75, 75);
+}
+
+.cr {
+    color: red;
+}
+
+
+/* NAVBAR SUPERIORE */
+.nav-superiore {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border: 1px solid lightgrey;
+}
+
+.left-box {
+    display: flex;
+    width: 50%;
+}
+
+.logo {
+    padding: 14px 14px 23px 17px;
+    background-position-y: center;
+    width: 19%;
+    height: 100%;
+    background-color: red;
+}
+
+
+.search {
+    display: flex;
+    border-bottom: 2px solid black;
+    height: 30px;
+    margin: 12px 15px 10px 13px;
+}
+
+.search-input {
     padding: 0;
     border: none;
     box-sizing: border-box;
 
-  }
-  input:focus{
-      outline:none;
-  }
-  input.search-input{
-      border:none;
-  }
-  .search::before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f005";
-  }
+}
 
-  .right-box{
-      display: flex;
-      width: 50%;
-      height: 100%;
-      justify-content:flex-end;
-  }
-  
-  .interact{
-      margin-right: 15px;
-      display: flex;
-      padding-top: 18px;
-      gap: 30px;
-  }
-  
-  .interact *{margin-left: 15px;}
-  
-  /* NAVBAR INFERIORE */
-  
-  .nav-inferiore{
-      margin-top: 5px;
-      width: 100%;
-      height: 30px;
-  }
-  
-  .wrapper-nav{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      
-  }
-  
-  .main-image img{
-      display: flex;
-      margin-top: 5px;
-      height: 500px;
-      width: 100%;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media only screen and (min-width:150px) and (max-width:700px)
-   {
-  
-      
-  }
-  
+input:focus {
+    outline: none;
+}
+
+input.search-input {
+    border: none;
+}
+
+.search::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+}
+
+.right-box {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.interact {
+    margin-right: 15px;
+    display: flex;
+    padding-top: 18px;
+    gap: 30px;
+}
+
+.interact * {
+    margin-left: 15px;
+    font-size:x-small;
+    
+}
+
+/* NAVBAR INFERIORE */
+
+.nav-inferiore {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.wrapper-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+.wrapper-nav *{font-size:xx-small;}
+.i .fas.fa-gamepad {
+    font-size: 11px;
+    color: #565656;
+}
+
+.main-image img {
+    display: flex;
+    margin-top: 5px;
+    height: 500px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:150px) and (max-width:700px) {}
