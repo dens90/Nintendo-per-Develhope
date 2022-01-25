@@ -136,16 +136,16 @@ i.fab {
     justify-content: center;
     margin: 0 auto;
     height: 150px;
-    border: 1px solid black;
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    border: 1px solid black;
+    grid-template-columns: 600px 150px 80px 160px;
     align-items: center;
     text-align: center;
-    padding:1rem;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1rem;
 }
 #bottone{
     background-color: #e60012;
@@ -156,14 +156,6 @@ i.fab {
     font-family: Verdana, serif;
     font-weight: bold;
 }
-.item1{}
-
-.item2{width: 150px;}
-
-.item3{}
-
-.item4{}
-
-
+.item4{mar}
 
 @media only screen and (min-width:150px) and (max-width:700px) {}
