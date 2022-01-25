@@ -104,18 +104,15 @@ input.search-input {
     height: 30px;
 }
 
-.wrapper-nav {
+.wrapper-nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    
+    list-style: none;
 }
-.wrapper-nav *{font-size:xx-small;}
-.i .fas.fa-gamepad {
-    font-size: 11px;
-    color: #565656;
-}
+
+
 
 .main-image img {
     display: flex;
@@ -123,6 +120,11 @@ input.search-input {
     height: 500px;
     width: 100%;
 }
+.wrapper-nav > ul > li i.fas,
+i.fab {
+  margin-left: 5px;
+}
+
 
 
 
