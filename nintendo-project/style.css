@@ -140,7 +140,7 @@ i.fab {
 
 .grid {
     display: grid;
-    grid-template-columns: 600px 150px 80px 160px;
+    grid-template-columns: 518px 150px 50px 153px;
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -156,6 +156,6 @@ i.fab {
     font-family: Verdana, serif;
     font-weight: bold;
 }
-.item4{mar}
+
 
 @media only screen and (min-width:150px) and (max-width:700px) {}
