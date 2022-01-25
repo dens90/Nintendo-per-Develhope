@@ -328,6 +328,7 @@ img.imageleft {
 }
 img.bannerimg {
     max-width: 390px;
+    width: 100%;
 }
 .banner-text {
     font-family: Verdana, serif;
