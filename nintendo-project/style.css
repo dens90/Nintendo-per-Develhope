@@ -160,7 +160,7 @@ i.fab {
 }
 
 hr{
-    margin: 0 8% 0 5%;
+    margin-inline: 351px;
     color: rgb(240, 238, 238, 0.5);
     
     }
@@ -196,12 +196,11 @@ hr{
 .container{
     display: flex;
     flex-flow: row;
-    width: 87%;
+    width: 63%;
     margin: 80px auto;
     height: auto;
     background-color: rgba(240, 6, 6, 0.972);
-    background-image: radial-gradient(circle, rgb(20, 20, 20) 20%, transparent 10%), radial-gradient(circle, rgb(16, 16, 17) 20%, transparent 10%);
-    background-size: 13px 13px;
+    
     
 }
 .item-image{
@@ -238,7 +237,7 @@ hr{
     transform: scale(1.2,1.2);
 }
 
-.explore{margin:40px 92px;font-size: xx-large;}
+.explore{margin: 43px 348px;;font-size: xx-large;}
 
 .footer {
     background-color: #3f3d3d;
@@ -299,7 +298,7 @@ hr{
 .section1 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 280px 80px;
+    grid-template-columns: 300px 80px;
     text-align: center;
     padding-top: 19px;
 
