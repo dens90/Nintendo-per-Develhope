@@ -193,16 +193,16 @@ hr{
    padding: 8px;
 }
 
-.container1{
+.container{
     display: flex;
     flex-flow: row;
     width: 87%;
-    margin: 40px 5%;
+    margin: 80px auto;
     height: auto;
     background-color: rgba(240, 6, 6, 0.972);
     background-image: radial-gradient(circle, rgb(20, 20, 20) 20%, transparent 10%), radial-gradient(circle, rgb(16, 16, 17) 20%, transparent 10%);
     background-size: 13px 13px;
-    background-position: 0 0, 0 0;
+    
 }
 .item-image{
     flex-grow: 0;
@@ -239,13 +239,8 @@ hr{
 }
 
 
-.explore{margin: 40px 65px;font-size: xx-large;}
-.container2{
-    display: flex;
-    margin:40px auto;
-    width: 90%;
-    background-size: contain;
-}
+.explore{margin:40px 92px;font-size: xx-large;}
+
 
 
 
