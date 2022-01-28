@@ -188,3 +188,7 @@ img.avatar-image {
 .avatar-card:hover {
     transform: rotateY(180deg);
 }
+h1.big-title-section-two {
+    text-align: center;
+    color: #5c5c5c;
+}
