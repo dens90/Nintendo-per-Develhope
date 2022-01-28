@@ -145,19 +145,20 @@ section {
 }
 .avatar-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 20px;
     grid-auto-flow: dense;
     justify-content: center;
     justify-items: center;
     padding: 10px;
+    margin-inline: 6rem;
 }
 .avatar-card {
     transition: transform 0.6s;
 }
 img.avatar-image {
     border-radius: 120px;
-    width: 200px;
+    width: 180px;
 }
 .avatar-card:hover {
     transform: rotateY(180deg);
