@@ -228,3 +228,57 @@ img.icon {
 p.box-text {
     margin-bottom: 2rem;
 }
+.masonry-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+.card-container {
+    position: relative;
+}
+.image-container {
+    background-image: url(assets/masonry-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+}
+.text-container {
+    background: #b42ff5;
+    color: #FFFFFF;
+    padding: 2rem;
+    height: 225px;
+}
+.icon-masonry {
+    width: 80px;
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img.icon-masonry-img {
+    background: #b42ff5;
+    border-radius: 80px;
+}
+.card-container.flex {
+    display: flow-root;
+    grid-column: 4 / 6;
+}
+.image-container.flex {
+    width: 100%;
+}
+.card-container.flex.item2 {
+    grid-column: 2/4;
+}
+.text-container.flex {
+    background: yellow;
+    color: blueviolet;
+}
+p.card-text-description {
+    font-size: 14px;
+}
+p.card-text-description.flex {
+    font-size: 24px;
+}
