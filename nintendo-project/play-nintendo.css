@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-background: #E60012;
+}
+body {
+    font-family: Verdana,serif;
+    background-image: url(assets/bg-body.png);
+}
+.main-header {
+    background-color: var(--red-background);
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    margin-left: 2rem;
+}
+.login {
+    position: absolute;
+    right: 20px;
+}
+button.login-signup {
+    padding: 0.5rem;
+    background: var(--red-background);
+    border: 0;
+    color: #FFFFFF;
+    font-family: Verdana,serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button.login-signup:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 5px;
+    font-size: 18px;
+}
+button.login-signup:hover {
+    background: #88000e;
+}
+.container-navbar {
+    font-family: Verdana,serif;
+    font-weight: bold;
+    color: #646464;
+    flex-wrap: wrap;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #646464;
+}
+h1.big-title {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 1rem;
+    color: #5c5c5c;
+}
+.link {
+    margin-right: 1rem;
+}
+img.play-nintendo-link {
+    max-width: 130px;
+}
+i.fas.fa-search {
+    font-size: 20px;
+}
+@media (max-width: 686px) {
+    .link.one {
+        display: none;
+    }
+    .link.two {
+        display: none;
+    }
+    .link.tree {
+        display: none;
+    }
+    .link.five {
+        display: none;
+    }
+    .link.six {
+        display: none;
+    }
+    .link.seven {
+        display: none;
+    }
+}
+/* --------------- css prima griglia --------------- */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-inline: 7rem;
+}
+.card-one {
+    background-image: url(assets/grid-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    margin: auto;
+    height: 470px;
+}
+.card-two {
+    background-image: url(assets/grid-image-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    margin: auto;
+    height: 470px;
+}
+.card-tree {
+    background-image: url(assets/grid-image-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    margin: auto;
+    height: 470px;
+}
+.label {
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 0.185em 0.5em 0.125em;
+    text-transform: uppercase;
+}
+section {
+    padding-top: 1rem;
+}
+.avatar-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+.avatar-card {
+    transition: transform 0.6s;
+}
+img.avatar-image {
+    border-radius: 120px;
+    width: 200px;
+}
+.avatar-card:hover {
+    transform: rotateY(180deg);
+}
