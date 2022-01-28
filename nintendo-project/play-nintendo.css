@@ -141,6 +141,12 @@ i.fas.fa-search {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
+.carousel-container {
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem 0 2rem;
+}
 section {
     padding-top: 1rem;
 }
