@@ -139,6 +139,7 @@ i.fas.fa-search {
     margin-top: 0;
     padding: 0.185em 0.5em 0.125em;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 section {
     padding-top: 1rem;
@@ -152,6 +153,7 @@ section {
     justify-items: center;
     padding: 10px;
     margin-inline: 6rem;
+    margin-top: 1rem;
 }
 .avatar-card {
     transition: transform 0.6s;
@@ -159,6 +161,23 @@ section {
 img.avatar-image {
     border-radius: 120px;
     width: 180px;
+}
+.avatar-image.yellow {
+    background: yellow;
+    width: 180px;
+    height: 180px;
+    border-radius: 120px;
+    position: relative;
+}
+.text-avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bolder;
+    color: #343434;
+    font-size: large;
 }
 .avatar-card:hover {
     transform: rotateY(180deg);
