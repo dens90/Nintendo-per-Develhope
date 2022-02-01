@@ -1,7 +1,27 @@
+@font-face {
+    font-family: museum-100;
+    src: url(font/MuseoSans-100.otf);
+}
+@font-face {
+    font-family: museum-300;
+    src: url(font/MuseoSans-300.otf);
+}
+@font-face {
+    font-family: museum-500;
+    src: url(font/MuseoSans_500.otf);
+}
+@font-face {
+    font-family: museum-700;
+    src: url(font/MuseoSans_700.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: museum-100,serif;
 }
 div.container {
     display: flex;
@@ -58,7 +78,6 @@ input.input-search {
     min-width: 375px;
     border: 0;
     padding: 0.4rem;
-    font-family: Verdana, serif;
 }
 input.input-search:focus {
     outline: none;
@@ -75,7 +94,6 @@ input.input-search:focus {
     right: 40px;
     top: 18px;
     color: #484848;
-    font-family: Verdana, serif;
     font-size: 14px;
     font-weight: bold;
 }
@@ -93,7 +111,6 @@ input.input-search:focus {
     max-height: 100%;
     margin: 0 auto;
     padding: .6rem;
-    font-family: Verdana, serif;
     font-size: 14px;
     font-weight: bold;
     color: #565656;
@@ -132,10 +149,10 @@ i.fas.fa-star {
 }
 .link-series {
     margin-left: 3rem;
-    font-size: 12px;
+    font-size: 15.6px;
     font-weight: bold;
     color: #484848;
-    font-family: Verdana, serif;
+    font-family: museum-300, serif;
 }
 a {
     color: #484848;
@@ -182,7 +199,6 @@ img.image-second {
 .left-text {
     display: inline-flex;
     float: left;
-    font-family: Verdana, serif;
     font-weight: bold;
     padding: 2rem;
     font-size: 20px;
@@ -190,7 +206,6 @@ img.image-second {
 .right-text {
     display: inline-flex;
     float: right;
-    font-family: Verdana, serif;
     font-weight: bold;
     padding: 2rem;
     font-size: 20px;
@@ -221,7 +236,6 @@ img.image-second {
     color: #fff;
     font-weight: bold;
     z-index: 10000;
-    font-family: Verdana, serif;
 }
 .text-row {
     margin-top: 2rem;
@@ -242,7 +256,6 @@ span.price {
     position: absolute;
     height: 150px;
     left: 0;
-    font-family: Verdana, serif;
     text-align: left;
     padding: 2rem;
     font-weight: bold;
@@ -306,7 +319,6 @@ img.imageleft {
     font-size: 22px;
     color: #fff;
     display: flex;
-    font-family: Verdana, serif;
     background: rgba(0, 0, 0, .2);
 }
 .left {
@@ -327,14 +339,14 @@ img.imageleft {
     align-items: center;
 }
 img.bannerimg {
-    max-width: 390px;
+    max-width: 320px;
     width: 100%;
 }
 .banner-text {
-    font-family: Verdana, serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #343434;
+    font-family: museum-500, serif;
 }
 button.banner-button {
     background-color: #e60012;
@@ -342,7 +354,6 @@ button.banner-button {
     border: 0;
     padding: 1rem;
     border-radius: 9px;
-    font-family: Verdana, serif;
     font-weight: bold;
 }
 button.banner-button:hover {
@@ -371,20 +382,20 @@ section.two-banner {
 .right-side-banner {
     border: 1px solid #343434;
     padding: 1rem;
+    font-family: museum-500, serif;
 }
 .text-left-side {
     display: inline-grid;
     vertical-align: top;
-    font-family: Verdana, serif;
     font-size: 2rem;
     margin-left: 3rem;
     margin-top: 1rem;
+    font-family: museum-500, serif;
     color: #343434;
 }
 .text-right-side {
     display: inline-grid;
     vertical-align: top;
-    font-family: Verdana, serif;
     font-size: 2rem;
     margin-left: 3rem;
     margin-top: 1rem;
@@ -416,7 +427,6 @@ picture.pict-two {
 }
 .inner-text {
     color: #fff;
-    font-family: Verdana,serif;
     padding-top: 1rem;
 }
 button.banner-button.fullwidth-right {
@@ -445,13 +455,9 @@ img.bannerimg.responsive.parental {
     vertical-align: middle;
 }
 span.middle-text {
-    font-family: Verdana, serif;
     font-size: 22px;
     font-weight: bold;
     color: #343434;
-}
-.bottom-text {
-    font-family: Verdana,serif;
 }
 .disclaimer {
     max-width: 1183px;
@@ -459,6 +465,7 @@ span.middle-text {
     margin: 0 auto;
     margin-top: 2rem;
     color: #343434;
+    font-size: 13px;
 }
 footer {
     background: linear-gradient(to top, #e7e7e7 0, #f9f9f9 75%);
@@ -470,6 +477,7 @@ ul.footer-ul {
 h4.titletext {
     margin-bottom: 1rem;
     font-size: 14px;
+    font-family: museum-300, serif;
 }
 li.footer-li {
     font-size: 14px;
@@ -483,7 +491,6 @@ li.footer-li {
 }
 .blocco-footer {
     padding: 1rem;
-    font-family: Verdana, serif;
     color: #484848;
 }
 footer.footer-second {
@@ -500,7 +507,6 @@ footer.footer-second {
 .contactus {
     display: inline-flex;
     color: #fff;
-    font-family: Verdana, serif;
     padding-top: 2rem;
     padding-bottom: 8px;
     margin-right: 10px;
