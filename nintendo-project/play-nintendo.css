@@ -4,11 +4,27 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: museum-100;
+    src: url(font/MuseoSans-100.otf);
+}
+@font-face {
+    font-family: museum-300;
+    src: url(font/MuseoSans-300.otf);
+}
+@font-face {
+    font-family: museum-500;
+    src: url(font/MuseoSans_500.otf);
+}
+@font-face {
+    font-family: museum-700;
+    src: url(font/MuseoSans_700.otf);
+}
 :root {
     --red-background: #E60012;
 }
 body {
-    font-family: Verdana,serif;
+    font-family: museum-100,serif;
     background-image: url(assets/bg-body.png);
     color: #646464;
 }
@@ -46,10 +62,11 @@ button.login-signup:hover {
     background: #88000e;
 }
 .container-navbar {
-    font-family: Verdana,serif;
+    font-family: museum-300,serif;
     font-weight: bold;
     color: #646464;
     flex-wrap: wrap;
+    font-size: 20px;
     background: #fff;
     justify-content: center;
     align-items: center;
@@ -60,9 +77,16 @@ button.login-signup:hover {
 }
 h1.big-title {
     text-align: center;
+    font-family: museum-500, serif;
     font-size: 2.4rem;
     padding: 1rem;
     color: #5c5c5c;
+}
+h1.card-title {
+    font-family: museum-300, serif;
+}
+.wh{
+    color: #fff;
 }
 .link {
     margin-right: 1rem;
@@ -193,6 +217,8 @@ img.avatar-image {
 h1.big-title-section-two {
     text-align: center;
     color: #5c5c5c;
+    font-family: museum-500, serif;
+    font-size: 2.4rem;
 }
 .flex-container {
     display: flex;
