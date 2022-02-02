@@ -1,52 +1,75 @@
+@font-face {
+    font-family: MuseoSans-100;
+    src: url(font/MuseoSans-100.otf);
+  }
+  @font-face {
+    font-family: MuseoSans-300;
+    src: url(font/MuseoSans-300.otf);
+  }
+  @font-face {
+    font-family: MuseoSans-500;
+    src: url(font/MuseoSans-500.otf);
+  }
+  @font-face {
+    font-family: MuseoSans-700;
+    src: url(font/MuseoSans-700.otf);
+  }
 :root{
     --tx-a:12px;
-    --tx-li:12px;
+    --tx-li:14px;
     --tx-span:14px;
-    --tx-p:16px;
+    --tx-p:18px;
     --tx-h1:38px;
     --tx-h2:28px;
-    --tx-h3:21px;
+    --tx-h3:19px;
     --tx-white: rgb(255, 255, 255);
     --color-text: rgb(77, 75, 75);
+    --mus-100:MuseoSans-100;
+    --mus-300:MuseoSans-300;
+    --mus-500:MuseoSans-500;
+    --mus-700:MuseoSans-700;
 }
-
+.tx-white{color: rgb(255, 255, 255);}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, serif;
     color: var(--color-text);
     
 }
 a{font-size: var(--tx-a);}
 li{font-size: var(--tx-li);}
 span{font-size: var(--tx-span);}
-p{font-size: var(--tx-p);}
+p{font-size: var(--tx-p);font-family: var(--mus-100);}
 h1{font-size:var(--tx-h1);}
 h2{font-size:var(--tx-h2);}
-h3{font-size:var(--tx-h3)}
+h3{font-size:var(--tx-h3);font-family: var(--mus-500)}
 
+body{
+    font-family: MuseoSans-100;
+}
 /* NAVBAR SUPERIORE */
 .nav-superiore {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 55px;
     border: 1px solid lightgrey;
 }
 
 .left-box {
     display: flex;
-    width: 40vw;
+    width: 385px;
     
 }
 
 .logo {
-    width: 26%;
+    width: 200px;
     height: 100%;
     background-color: red;
 }
 .logo > img{
-    margin: 13px 23px 8px 20px;
+    width: 100%;
+    line-height: 100%;
 }
 
 .search {
@@ -129,6 +152,8 @@ i.fas:hover{
     align-items: center;
     gap: 30px;
     list-style: none;
+    font-family: var(--mus-300);
+    font-weight: bold;
 }
 .wrapper-nav li:hover{
     cursor: pointer;
@@ -145,7 +170,7 @@ i.fas:hover{
 i.fas,
 i.fab {
     margin-right: 5px;
-    font-size: var(--tx-li);
+    font-size: var(--tx-p);
 }
 
 
@@ -177,7 +202,6 @@ i.fab {
     border: 0;
     padding: 1.1rem;
     border-radius: 9px;
-    font-family: Verdana, serif;
     font-weight: bold;
     width: 180px;
     height: 60px;
@@ -195,7 +219,7 @@ i.fab {
      border-radius: 9px;
      
 }
-.item1 > h2{font-size:26px;}
+.item1 > h2{font-size:28px;font-family: MuseoSans-500;}
 
 .item4{font-size: var(--tx-li)}
 hr{
@@ -229,10 +253,12 @@ hr{
 }
 .cards-container p{
    margin-top: 10px;
-   font-size: small; 
+   font-size: 14px;
+   font-weight: bold;
    border-bottom: 2px solid red;
    width: 127px;
    padding: 8px;
+   font-family: var(--mus-100);
 }
 
 .container{
@@ -242,12 +268,10 @@ hr{
     margin: 80px auto;
     height: auto;
     background-color: rgba(240, 6, 6, 0.972);
-    transition: width 2s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.container > h2{color:var(--tx-white);}
-.container:hover{
-    width: 70%;
+
+.img-family{
+    width: 100%;
 }
 .item-image{
     width: 24%;
@@ -272,7 +296,6 @@ hr{
     padding: 1rem;
     border:none;
     border-radius: 9px;
-    font-family: Verdana, serif;
     font-weight: bold;
   
 }
@@ -288,7 +311,7 @@ hr{
     transform: scale(1.2,1.2);
 }
 
-.explore{margin: 43px 348px;}
+.explore{margin: 43px 348px;font-family: var(--mus-500);}
 
 .footer {
     background-color: #3f3d3d;
@@ -299,7 +322,6 @@ hr{
 
 .link-cont a {
     text-decoration: none;
-    font-family: sans-serif;
     font-weight: bolder;
     color: var(--tx-white);
 }
@@ -310,7 +332,6 @@ hr{
     font-size: 75%;
     margin: 1%;
     font-weight: 300;
-    font-family: sans-serif;
     line-height: 1;
 }
 
