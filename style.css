@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: MuseoSans-500;
-    src: url(font/MuseoSans-500.otf);
+    src: url(font/MuseoSans_500.otf);
 }
 
 @font-face {
     font-family: MuseoSans-700;
-    src: url(font/MuseoSans-700.otf);
+    src: url(font/MuseoSans_700.otf);
 }
 
 :root {
