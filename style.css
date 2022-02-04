@@ -19,6 +19,7 @@
 }
 
 :root {
+    
     --tx-a: 12px;
     --tx-li: 14px;
     --tx-span: 14px;
@@ -78,6 +79,7 @@ h3 {
 
 body {
     font-family: MuseoSans-100;
+    
 }
 
 /* NAVBAR SUPERIORE */
@@ -341,9 +343,6 @@ hr {
     color: var(--tx-white);
 }
 
-.item-btn {
-    flex-grow: 4;
-}
 
 #btn-shop {
     background-color: rgba(27, 26, 26, 0.3);
