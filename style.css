@@ -19,7 +19,6 @@
 }
 
 :root {
-    
     --tx-a: 12px;
     --tx-li: 14px;
     --tx-span: 14px;
@@ -44,7 +43,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--color-text);
-
+    overflow: visible;
 }
 
 a {
@@ -79,32 +78,33 @@ h3 {
 
 body {
     font-family: MuseoSans-100;
-    
+
 }
 
 /* NAVBAR SUPERIORE */
 .nav-superiore {
     display: flex;
-    width: 100vw;
-    height: 55px;
+    width: 100%;
+    height: 3.5rem;
     border: 1px solid lightgrey;
+
 }
 
 .left-box {
     display: flex;
-    width: 385px;
-
+    width: 24.1rem;
+    height: 3.5rem;
 }
 
 .logo {
     width: 200px;
-    height: 100%;
+    height: 3.43rem;
     background-color: red;
 }
 
 .logo>img {
     width: 100%;
-    line-height: 100%;
+    height: 3.43rem;
 }
 
 .search {
@@ -119,7 +119,6 @@ body {
     padding: 0;
     border: none;
     box-sizing: border-box;
-
 }
 
 input:focus {
@@ -144,16 +143,21 @@ input[type="search-input"]:hover {
     content: "\f002";
 }
 
+.hambuger,
+.hamburger i {
+    display: none;
+}
+
 .right-box {
     display: flex;
     width: 60vw;
-    height: 100%;
+    height: 3.43rem;
     justify-content: flex-end;
 
 }
 
 .interact {
-    margin-right: 15px;
+    /* margin-right: 0.938rem; */
     display: flex;
     padding-top: 18px;
     gap: 30px;
@@ -219,25 +223,25 @@ i.fab {
 
 
 .order {
-    height: auto;
-    width: 100vw;
+    /* height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 50px
+    margin-bottom: 50px */
 }
 
 .grid {
     width: 100%;
-    display: grid;
+    display: flex;
     grid-template-columns: 30vw 10vw 2vw 7vw;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
     justify-content: center;
-    padding: 1rem;
+    gap: 1rem;
+    
+    
+    margin: 2rem auto;
+    
+
 }
 
 .bottone {
@@ -273,6 +277,14 @@ i.fab {
 .item4 {
     font-size: var(--tx-li)
 }
+.item3{
+    display: flex;
+
+}
+.item3 > span{
+    padding-left: 5px;
+    align-self: center;
+}
 
 hr {
     margin: auto 18vw;
@@ -285,7 +297,8 @@ hr {
     margin-bottom: 100px;
     margin-left: 20px;
     display: grid;
-    grid-template-columns: repeat(6, minmax(230px, auto));
+    overflow: visible;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
     grid-template-rows: 250px;
     gap: 10px;
 }
@@ -385,27 +398,31 @@ hr {
     position: relative;
     margin-bottom: 30px;
 }
-.go-to-switch h2{
+
+.go-to-switch h2 {
     font-family: var(--mus-500);
     line-height: 60px;
 }
-.go-to-switch >.bottone {
+
+.go-to-switch>.bottone {
     position: absolute;
     height: 100%;
     width: 350px;
     right: 0;
-    
+
 }
-.go-to-switch >.bottone > a{
+
+.go-to-switch>.bottone>a {
     text-decoration: none;
     font-size: var(--tx-h3);
     font-family: var(--mus-500);
     color: var(--tx-white);
 }
-.go-to-switch >.bottone:hover{
+
+.go-to-switch>.bottone:hover {
     width: 355px;
     height: 65px;
-} 
+}
 
 
 /* INIZIO FOOTER */
@@ -414,7 +431,7 @@ hr {
 
 .footer {
     background-color: #3f3d3d;
-    width: 100vw;
+    width: 100%;
     min-height: auto;
 }
 
@@ -490,7 +507,7 @@ hr {
 }
 
 .social-button1 {
-   background-color: #1878f2;
+    background-color: #1878f2;
 }
 
 .social-button2 {
@@ -502,8 +519,58 @@ hr {
 }
 
 .social-button4 {
-   background-color: #ff0200;
+    background-color: #ff0200;
 }
-    
 
-@media only screen and (min-width:150px) and (max-width:700px) {}
+
+@media only screen and (min-width:320px) and (max-width:700px) {
+
+    .nav-superiore {
+        display: flex;
+        margin-bottom: 6rem;
+        justify-content: space-around;
+
+    }
+
+    .left-box {
+        width: 100%;
+    }
+
+    .nav-inferiore {
+        display: none;
+    }
+
+    .logo,
+    .logo img {
+        max-width: 3.8rem;
+    }
+
+    .search,
+    .interact,
+    .right-box {
+        visibility: collapse;
+
+    }
+
+    .hambuger {
+        height: 100%;
+        width: 3.5rem;
+        display: flex;
+        justify-content: end;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
