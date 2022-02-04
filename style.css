@@ -414,22 +414,25 @@ hr {
 
 .footer {
     background-color: #3f3d3d;
-    width: 100%;
+    width: 100vw;
     min-height: auto;
-    border: 1px solid lightgrey
 }
 
 .link-cont a {
+    font-size: 1rem;
+    font-family: var(--mus-700);
     text-decoration: none;
     font-weight: bolder;
-    color: var(--tx-white);
+    color: #ffffffd7;
 }
 
 .copyright p {
-    color: #ffffffb5;
+    font-family: var(--mus-100);
+    color: #ffffffc9;
     text-align: center;
-    font-size: 75%;
-    margin: 1%;
+    font-size: 0.75rem;
+    line-height: 1.38;
+    margin: 0.5rem;
     font-weight: 300;
     line-height: 1;
 }
@@ -444,7 +447,7 @@ hr {
 }
 
 .fa-brands {
-    background-color: papayawhip;
+    color: white;
     border-radius: 0.2em;
     padding: 0.4em;
 }
@@ -452,25 +455,26 @@ hr {
 .block1 {
     display: grid;
     padding: 10px;
-    justify-content: center
+    justify-content: center;
 }
 
 .left-block {
     display: grid;
     padding: 0px;
-    justify-content: center
+    justify-content: center;
 }
 
 .section1 {
     display: grid;
     justify-content: center;
-    grid-template-columns: 300px 80px;
+    grid-template-columns: 280px 80px;
     text-align: center;
     padding-top: 19px;
 
 }
 
 .link-cont {
+    font-family: var(--mus-700);
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 17px;
@@ -478,8 +482,28 @@ hr {
 }
 
 .block2 {
-    margin-top: 11px
+    margin-top: 11px;
 }
 
+.block3 {
+    height: 70px;
+}
+
+.social-button1 {
+   background-color: #1878f2;
+}
+
+.social-button2 {
+    background-color: #d32c69;
+}
+
+.social-button3 {
+    background-color: #1da1f2;
+}
+
+.social-button4 {
+   background-color: #ff0200;
+}
+    
 
 @media only screen and (min-width:150px) and (max-width:700px) {}
