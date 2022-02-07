@@ -42,7 +42,7 @@
    
     box-sizing: border-box;
     color: var(--color-text);
-    overflow: visible;
+    
 }
 
 a {
@@ -77,7 +77,7 @@ h3 {
 
 body {
     font-family: MuseoSans-100;
-    
+    overflow: visible;
 }
 
 /* NAVBAR SUPERIORE */
@@ -227,15 +227,6 @@ i.fab {
 }
 
 
-.order {
-    /* height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 50px */
-}
-
 .grid {
     width: 100%;
     display: flex;
@@ -360,11 +351,6 @@ align-items: center;
     margin: 0px 0px 0px -50px;
 }
 /* 
-.item-title {
-    margin-top: 71px;
-    width: 53%;
-    color: var(--tx-white);
-} */
 
 
 #btn-shop {
@@ -450,13 +436,14 @@ div [class^="tf"] {
       cursor: pointer;
     }
 
-.top-footer {
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    justify-content: space-around;
-    height: 25rem;
-    flex-wrap: wrap;
-}
+    .top-footer {
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        height: 25rem;
+        flex-wrap: wrap;
+    }
 .change-r {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
