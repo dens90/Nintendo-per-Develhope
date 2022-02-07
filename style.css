@@ -441,7 +441,8 @@ hr {
     color: white;
     display: inline-block;
     cursor: pointer;
-    margin: 6px;
+    margin: 0.4rem;
+    padding: 0;
     border-style: none;
     border-radius: 0.4em;
 }
