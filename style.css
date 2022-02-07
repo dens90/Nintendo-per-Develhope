@@ -39,8 +39,7 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
     color: var(--color-text);
     overflow: visible;
@@ -212,11 +211,11 @@ i.fas:hover {
     color: red;
 }
 
-
+.main-image{
+    width: 100%;
+}
 .main-image img {
     
-    margin-top: 5px;
-    height: 500px;
     width: 100%;
     overflow: visible;
 }
@@ -243,7 +242,7 @@ i.fab {
     grid-template-columns: 30vw 10vw 2vw 7vw;
     justify-content: center;
     gap: 1rem;
-    
+    align-items: center;
     
     margin: 2rem auto;
     
@@ -293,7 +292,7 @@ i.fab {
 }
 
 hr {
-    margin: 80px 18vw ;
+    margin: 71px 18vw ;
     color: rgb(240, 238, 238, 0.5);
 
 }
@@ -399,26 +398,22 @@ align-items: center;
 .explore {
     position: absolute;
     font-family: var(--mus-500);
-    bottom: 101%;
+    bottom: 97%;
 }
 
 
 .go-to-switch {
-
     display: flex;
     width: 63vw;
-    margin: 30px auto;
-    border: 1px solid black;
+    margin: 20px auto;
     align-items: center;
     justify-content: space-between;
 }
 
 .go-to-switch h2 {
     font-family: var(--mus-500);
-    border: 1px solid black;
 }
 .go-to-switch>.bottone{
-    border: 1px solid black;
     width: 350px;
     text-align: center;
 }
@@ -434,7 +429,7 @@ align-items: center;
 .go-to-switch>.bottone:hover {
     width: 355px;
     height: 65px;
-    overflow-x: hidden;
+    
 }
 
 
