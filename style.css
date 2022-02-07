@@ -226,16 +226,6 @@ i.fab {
     font-size: var(--tx-p);
 }
 
-
-.order {
-    /* height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 50px */
-}
-
 .grid {
     width: 100%;
     display: flex;
@@ -516,7 +506,8 @@ img.flag-img {
     color: white;
     display: inline-block;
     cursor: pointer;
-    margin: 6px;
+    margin: 0.4rem;
+    padding: 0;
     border-style: none;
     border-radius: 0.4em;
 }
