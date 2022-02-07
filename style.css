@@ -78,7 +78,7 @@ h3 {
 
 body {
     font-family: MuseoSans-100;
-
+    
 }
 
 /* NAVBAR SUPERIORE */
@@ -87,28 +87,30 @@ body {
     width: 100%;
     height: 3.5rem;
     border: 1px solid lightgrey;
-
+    gap: 6rem;
 }
 
 .left-box {
     display: flex;
-    width: 24.1rem;
+    width: 50%;
     height: 3.5rem;
 }
 
 .logo {
-    width: 200px;
+    width: 17%;
     height: 3.43rem;
     background-color: red;
+    justify-content:center;
 }
 
-.logo>img {
-    width: 100%;
+.logo > img {
+    width: 65%;
+    margin-left: 20px;
     height: 3.43rem;
 }
 
 .search {
-    width: 70%;
+    width: 50%;
     display: flex;
     border-bottom: 1px solid black;
     height: 30px;
@@ -150,27 +152,30 @@ input[type="search-input"]:hover {
 
 .right-box {
     display: flex;
-    width: 60vw;
+    width: 50%;
     height: 3.43rem;
     justify-content: flex-end;
-
+   
 }
 
 .interact {
     /* margin-right: 0.938rem; */
     display: flex;
     padding-top: 18px;
-    gap: 30px;
+    justify-content: flex-end;
 }
 
 .interact ul {
     display: flex;
     list-style: none;
+    gap: 30px;
+    padding-right: 2rem;
 }
 
 .interact * {
-    gap: 15px;
+    
     font-weight: bold;
+    
 }
 
 
@@ -209,10 +214,11 @@ i.fas:hover {
 
 
 .main-image img {
-    display: flex;
+    
     margin-top: 5px;
     height: 500px;
     width: 100%;
+    overflow: visible;
 }
 
 i.fas,
@@ -287,7 +293,7 @@ i.fab {
 }
 
 hr {
-    margin: auto 18vw;
+    margin: 80px 18vw ;
     color: rgb(240, 238, 238, 0.5);
 
 }
@@ -299,8 +305,9 @@ hr {
     display: grid;
     overflow: visible;
     grid-template-columns: repeat(auto-fit, minmax(230px, auto));
-    grid-template-rows: 250px;
+    grid-template-rows: auto;
     gap: 10px;
+    
 }
 
 .card:hover {
@@ -331,30 +338,34 @@ hr {
 
 .container {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     width: 63vw;
-    margin: 80px auto;
+    margin: 0 auto;
     height: auto;
     background-color: rgba(240, 6, 6, 0.972);
 }
 
+.primo{
+justify-content: space-around;
+align-items: center;
+}
 .img-family {
     width: 100%;
 }
 
 .item-image {
-    width: 24%;
+    align-self: flex-start;
 }
 
 .item-image img {
     margin: 0px 0px 0px -50px;
 }
-
+/* 
 .item-title {
     margin-top: 71px;
     width: 53%;
     color: var(--tx-white);
-}
+} */
 
 
 #btn-shop {
@@ -362,8 +373,7 @@ hr {
     color: #fff;
     width: 157px;
     height: 50px;
-    margin: 94px 0px 0px 88px;
-    padding: 1rem;
+    
     border: none;
     border-radius: 9px;
     font-weight: bold;
@@ -382,35 +392,37 @@ hr {
     opacity: 1;
     transform: scale(1.2, 1.2);
 }
+.secondo{
+    position: relative;
+}
 
 .explore {
-    margin: 43px 348px;
+    position: absolute;
     font-family: var(--mus-500);
+    bottom: 101%;
 }
 
 
 .go-to-switch {
 
-    width: 63vw;
-    height: 60px;
-    margin: 0 auto;
     display: flex;
-    position: relative;
-    margin-bottom: 30px;
+    width: 63vw;
+    margin: 30px auto;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .go-to-switch h2 {
     font-family: var(--mus-500);
-    line-height: 60px;
+    border: 1px solid black;
 }
-
-.go-to-switch>.bottone {
-    position: absolute;
-    height: 100%;
+.go-to-switch>.bottone{
+    border: 1px solid black;
     width: 350px;
-    right: 0;
-
+    text-align: center;
 }
+
 
 .go-to-switch>.bottone>a {
     text-decoration: none;
@@ -422,6 +434,7 @@ hr {
 .go-to-switch>.bottone:hover {
     width: 355px;
     height: 65px;
+    overflow-x: hidden;
 }
 
 
