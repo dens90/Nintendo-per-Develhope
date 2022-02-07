@@ -440,7 +440,51 @@ align-items: center;
 
 /* INIZIO FOOTER */
 
+div [class^="tf"] {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* flex : 0 1 10em; */
+  }
 
+  .top-footer>div>h4 {
+      margin-top: 2.5rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+.top-footer {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-around;
+    height: 25rem;
+    flex-wrap: wrap;
+}
+.change-r {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+img.flag-img {
+    width: 1.2rem;
+    height: 0.7rem;   
+}
+
+.top-footer>div>ul>li {
+    list-style-type: none;
+    margin-top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
 
 .footer {
     background-color: #3f3d3d;
