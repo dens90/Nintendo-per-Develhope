@@ -80,7 +80,7 @@ body {
     padding: 0;
 }
 
-/* header{
+header{
     position: fixed;
     width: 100%;
     top: 0;
@@ -88,7 +88,7 @@ body {
     background-color: white;
     z-index: 1;
     
-} */
+}
 /* NAVBAR SUPERIORE */
 .nav-superiore {
     display: flex;
@@ -223,6 +223,7 @@ i.fas:hover {
 
 .main-image {
     width: 100%;
+    margin-top: 5rem;
 }
 
 .main-image img {
