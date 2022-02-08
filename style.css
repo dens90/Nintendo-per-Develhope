@@ -79,7 +79,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    
+} */
 /* NAVBAR SUPERIORE */
 .nav-superiore {
     display: flex;
@@ -87,6 +95,7 @@ body {
     height: 3.5rem;
     border-bottom: 1px solid lightgrey;
     gap: 6rem;
+    position: sticky;
 }
 
 .left-box {
@@ -158,9 +167,9 @@ input[type="search-input"]:hover {
 }
 
 .interact {
-    /* margin-right: 0.938rem; */
+   
     display: flex;
-    padding-top: 18px;
+    
     justify-content: flex-end;
 }
 
@@ -292,7 +301,7 @@ hr {
     margin-bottom: 100px;
     margin-left: 20px;
     display: grid;
-    overflow: visible;
+    
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto;
     gap: 10px;
@@ -342,23 +351,16 @@ hr {
 justify-content: space-around;
 align-items: center;
 }
-.img-family {
-    width: 100%;
-}
+
 
 .item-image {
     align-self: flex-start;
+    
 }
 
 .item-image img {
     margin: 0px 0px 0px -50px;
 }
-/* 
-.item-title {
-    margin-top: 71px;
-    width: 53%;
-    color: var(--tx-white);
-} */
 
 
 #btn-shop {
@@ -366,11 +368,10 @@ align-items: center;
     color: #fff;
     width: 157px;
     height: 40px;
-    
     border: none;
     border-radius: 9px;
     font-weight: bold;
-
+    
 }
 
 #btn-shop::after {
@@ -380,7 +381,7 @@ align-items: center;
 }
 
 #btn-shop:hover {
-    height: 56px;
+    height: 45px;
     padding: 0;
     opacity: 1;
     transform: scale(1.2, 1.2);
@@ -388,7 +389,9 @@ align-items: center;
 .secondo{
     position: relative;
 }
-
+.img-family {
+    width: 100%;
+}
 .explore {
     position: absolute;
     font-family: var(--mus-500);
@@ -425,6 +428,15 @@ align-items: center;
     height: 65px;
     
 }
+
+
+
+
+
+
+
+
+
 
 
 /* INIZIO FOOTER */
@@ -608,6 +620,45 @@ img.flag-img {
         justify-content: end;
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media only screen and (min-width:760px) and (max-width:1366px){
+
+   
+   .container{
+       width: 80%;
+      
+   }
+   .item-image{
+       width: 30%;
+   }
+   .item-title{
+       width: 40%;
+       
+   }
+   hr{
+    margin: 71px 10% ;
+   }
+   .go-to-switch{
+    width: 80%;
+   }
+
+
+
+
 
 
 
