@@ -457,7 +457,7 @@ hr {
     width: 100%;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
-    font-family: var(--mus-300);
+    font-family: var(--mus-500);
 }
 
 .heart{
@@ -471,10 +471,32 @@ hr {
 .second-grid i {
     color: red;
 }
+.third-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-items: center;
+    margin: 0 20px;
+    gap: 0 1rem;
+    
+}
 
-
-
-
+.third-grid h2 {
+    padding-left: 17.3%;
+    width: 100%;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    font-family: var(--mus-500);
+}
+.third-grid i {
+    color: red;
+}
+.bayonetta p{
+    margin-top: -4px;
+    
+}
+.bayonetta i{
+    margin-top: -25px;
+}
 
 
 
@@ -712,14 +734,16 @@ img.flag-img {
     }
 
     .second-grid h2 {
-        padding-left: 6.8%;
+        padding-left: 8.8%;
     }
 
     .card-hidden {
         display: none;
     }
 
-    
+    .third-grid h2 {
+        padding-left: 8.8%;
+    }
 
 
 }
