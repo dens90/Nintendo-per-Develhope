@@ -31,7 +31,7 @@ div.container {
 }
 .container-links {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 2rem;
@@ -411,6 +411,8 @@ button.banner-button.leftside {
     grid-auto-rows: auto;
     max-width: 1183px;
     grid-gap: 2rem;
+    position: relative;
+    align-items: center;
     background: #e60012;
 }
 section.full-width-banner {
@@ -432,9 +434,6 @@ picture.pict-two {
 button.banner-button.fullwidth-right {
     background-color: #ffffff;
     color: red;
-}
-.pulsante-destrs {
-    padding-top: 5rem;
 }
 img.bannerimg.responsive {
     width: 100%;
@@ -576,15 +575,74 @@ img.bannerimg.responsive.esrb {
     padding-bottom: 2rem;
     color: #fff;
 }
-@media (max-width: 898px) {
-    .nav-links {
-        display: none;
-    }
-}
-
 img.logo-footer-nintendo {
     width: 90px;
 }
 img.logo-header-nintendo {
     width: 100px;
+}
+@media (max-width: 898px) {
+    .nav-links {
+        display: none;
+    }
+    .footer-grid {
+        padding: 2rem;
+    }
+}
+@media (max-width: 1308px) {
+    .logo {
+        display: none;
+    }
+    .disclaimer {
+        margin-left: 3rem;
+    }
+    .footer-grid {
+        padding: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .after.right {
+        font-size: 1rem;
+    }
+    p.desc {
+        font-size: .8rem;
+    }
+    .second-container .after {
+        font-size: 1rem;
+    }
+    i.fas.fa-chevron-right {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 695px) {
+    .section-three-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+    }
+    .grid-two-banner {
+        grid-template-columns: 1fr;
+    }
+    .first-banner {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        padding: 2rem;
+    }
+    img.bannerimg {
+        max-width: 500px;
+    }
+    .fullwidth-grid-banner {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+    .footer-grid {
+        padding: 2rem;
+    }
+}
+@media (max-width: 511px) {
+    .copyright-two {
+        padding: 1rem;
+    }
+    .link-series {
+        display: none;
+    }
 }
