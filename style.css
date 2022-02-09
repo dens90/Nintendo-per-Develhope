@@ -30,8 +30,8 @@
     --color-text: rgb(77, 75, 75);
     --mus-100: MuseoSans-100;
     --mus-300: MuseoSans-300;
-    --mus-500: MuseoSans-500;
-    --mus-700: MuseoSans-700;
+    --mus_500: MuseoSans-500;
+    --mus_700: MuseoSans-700;
 }
 
 .tx-white {
@@ -67,11 +67,12 @@ h1 {
 
 h2 {
     font-size: var(--tx-h2);
+    font-family: var(--mus_500);
 }
 
 h3 {
     font-size: var(--tx-h3);
-    font-family: var(--mus-500)
+    font-family: var(--mus_500);
 }
 
 body {
@@ -80,15 +81,16 @@ body {
     padding: 0;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     background-color: white;
     z-index: 1;
-    
+
 }
+
 /* NAVBAR SUPERIORE */
 .nav-superiore {
     display: flex;
@@ -154,8 +156,9 @@ input[type="search-input"]:hover {
     content: "\f002";
 }
 
-.hambuger,
-.hamburger i {
+
+.hamburger,
+.log {
     display: none;
 }
 
@@ -170,7 +173,6 @@ input[type="search-input"]:hover {
 .interact {
 
     display: flex;
-
     justify-content: flex-end;
 }
 
@@ -179,10 +181,11 @@ input[type="search-input"]:hover {
     list-style: none;
     gap: 30px;
     padding-right: 2rem;
+    ;
 }
 
 .interact * {
-
+    text-decoration: none;
     font-weight: bold;
 
 }
@@ -192,7 +195,10 @@ input[type="search-input"]:hover {
     cursor: pointer;
     color: red
 }
-
+.right-box a:hover {
+    cursor: pointer;
+    color: red
+}
 i.fas:hover {
     cursor: pointer;
     color: red;
@@ -214,8 +220,15 @@ i.fas:hover {
     list-style: none;
     font-family: var(--mus-300);
     font-weight: bold;
+    
 }
-
+.wrapper-nav a{
+    text-decoration: none;
+}
+.wrapper-nav a:hover{
+    cursor: pointer;
+    color: red;
+}
 .wrapper-nav li:hover {
     cursor: pointer;
     color: red;
@@ -252,19 +265,22 @@ i.fab {
 }
 
 .bottone {
+    box-sizing: border-box;
     background-color: #e60012;
     color: #fff;
     border: 0;
-    padding: 1.1rem;
+    line-height: 62px; 
     border-radius: 9px;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--mus_700);
     width: 180px;
-    height: 60px;
+    height: 62px;
+    cursor: pointer;
 }
 
 .bottone::after {
     content: ' > ';
-    width: 57px;
+    font-size: 20px;
 }
 
 .bottone:hover {
@@ -278,7 +294,7 @@ i.fab {
 
 .item1>h2 {
     font-size: 28px;
-    font-family: MuseoSans-500;
+    
 }
 
 .item4 {
@@ -311,7 +327,7 @@ hr {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-
+    
 
 }
 
@@ -322,6 +338,7 @@ hr {
 .cards-container img {
     border-radius: 10px;
     width: 100%;
+    cursor: pointer;
 
 }
 
@@ -378,8 +395,9 @@ hr {
     height: 40px;
     border: none;
     border-radius: 9px;
-    font-weight: bold;
-
+    font-family: var(--mus_700);
+    font-size: 18px;
+    cursor: pointer;
 }
 
 #btn-shop::after {
@@ -405,7 +423,7 @@ hr {
 
 .explore {
     position: absolute;
-    font-family: var(--mus-500);
+    font-family: var(--mus_500);
     bottom: 97%;
 }
 
@@ -419,7 +437,7 @@ hr {
 }
 
 .go-to-switch h2 {
-    font-family: var(--mus-500);
+    
 }
 
 .go-to-switch>.bottone {
@@ -452,33 +470,38 @@ hr {
     margin: 0 20px;
     gap: 0 1rem;
 }
-
+.second-grid img{
+    cursor: pointer;
+}
 .second-grid h2 {
     padding-left: 17.3%;
     width: 100%;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
-    font-family: var(--mus-500);
+    
 }
 
-.heart{
+.heart {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.heart p{
+
+.heart p {
     border-bottom: 1px solid red;
 }
+
 .second-grid i {
     color: red;
 }
+
 .third-grid {
     display: grid;
     grid-template-columns: repeat(6, auto);
     justify-items: center;
     margin: 0 20px;
     gap: 0 1rem;
-    
+
 }
 
 .third-grid h2 {
@@ -486,17 +509,24 @@ hr {
     width: 100%;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
-    font-family: var(--mus-500);
+    
 }
+
 .third-grid i {
     color: red;
 }
-.bayonetta p{
+.third-grid img{
+    cursor: pointer;
+}
+
+.bayonetta p {
     margin-top: -4px;
     
 }
-.bayonetta i{
+
+.bayonetta i {
     margin-top: -25px;
+    
 }
 
 
@@ -648,55 +678,181 @@ img.flag-img {
 }
 
 
-@media only screen and (min-width:320px) and (max-width:700px) {
-
-    .nav-superiore {
-        display: flex;
-        margin-bottom: 6rem;
-        justify-content: space-around;
-
+@media only screen and (min-width:320px) and (max-width:720px) {
+    header {
+        position: inherit;
     }
 
-    .left-box {
-        width: 100%;
-    }
-
+    .search,
+    .right-box,
     .nav-inferiore {
         display: none;
     }
 
-    .logo,
-    .logo img {
-        max-width: 3.8rem;
+    .logo {
+        width: 20%;
     }
 
-    .search,
-    .interact,
-    .right-box {
-        visibility: collapse;
-
+    .left-box {
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
     }
 
-    .hambuger {
-        height: 100%;
-        width: 3.5rem;
+    .log {
+        display: block;
+        margin-right: 3px;
+        position: absolute;
+        right: 80px;
+        
+    }
+    .log p{
+        font-family: var(--mus_700);
+    }
+
+    .hamburger {
         display: flex;
-        justify-content: end;
+        flex-direction: column;
 
     }
 
+    .hamburger img {
+        height: 60px;
+        position: absolute;
+        right: 15px;
+    }
+
+    .hamburger>aside {
+        display: none;
+        padding-top: 70px;
+
+    }
+
+    .hamburger li {
+        color: red;
+        list-style: none;
+        line-height: 30px;
+        margin-left: 30px;
+    }
+
+    
+
+    .hamburger:hover {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: red;
+    }
+    .hamburger > aside::after + .hamburger:hover {
+        display: block;
+    }
+
+    .hamburger hr {
+        color: white;
+        width: 100%;
+        margin: 10px auto;
+
+    }
+
+    .main-image {
+        margin-top: 5px;
+    }
+    .grid{
+        justify-content: space-around;
+    }
+    .item1{
+        width:40%
+    }
+    .item3 {
+        display: none;
+    }
+
+    hr {
+        width: 100%;
+        margin: auto;
+    }
+
+    .cards-container {
+        grid-template-columns: 300px;
+        justify-content: flex-start;
+    }
+
+    .cards-container * {
+        grid-column: 1 / 2;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        margin: 4rem auto;
+
+    }
+
+    .primo {
+        height: 500px;
+    }
+
+    .primo h2 {
+        margin: 0 10px;
+        text-align: center;
+
+    }
+
+    #btn-shop {
+        
+        width: 180px;
+        height: 60px;
+    }
 
 
+    .secondo {
+        margin-top: 100px;
+    }
 
+    .go-to-switch {
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-start;
+    }
 
+    .second-grid {
+        grid-template-columns: auto;
+        justify-content: flex-start;
+    }
 
+    .second-grid h2 {
+        justify-self: start;
+        text-align: left;
+        padding-left: 0;
+        width: 100%;
+    }
 
+    .second-grid * {
+        grid-column: 1 / 2;
+    }
 
+    .third-grid {
+        grid-template-columns: auto;
+        justify-items: flex-start;
 
+    }
 
+    .third-grid h2 {
+        justify-self: start;
+        text-align: left;
+        padding-left: 0;
+        width: 100%;
+    }
 
+    .third-grid * {
+        grid-column: 1 / 2;
+    }
 
-
+    .bayonetta i {
+        padding-right: 102px;
+    }
 
 }
 
