@@ -782,41 +782,6 @@ img.flag-img {
         right: 15px;
     }
 
-    .hamburger>aside {
-        display: none;
-        padding-top: 70px;
-
-    }
-
-    .hamburger li {
-        color: red;
-        list-style: none;
-        line-height: 30px;
-        margin-left: 30px;
-    }
-
-    input[type="checkbox"]{
-        visibility: collapse;
-    }
-
-
-    .input:checked ~ *aside {
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        background-color: black;
-        color: red;
-    }
-
-    
-    
-
-    .hamburger hr {
-        color: white;
-        width: 100%;
-        margin: 10px auto;
-
-    }
 
     .main-image {
         margin-top: 5px;
@@ -916,6 +881,33 @@ img.flag-img {
     .bayonetta i {
         padding-right: 102px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
