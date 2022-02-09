@@ -171,7 +171,6 @@ input[type="search-input"]:hover {
 }
 
 .interact {
-
     display: flex;
     justify-content: flex-end;
 }
@@ -434,10 +433,6 @@ hr {
     margin: 20px auto;
     align-items: center;
     justify-content: space-between;
-}
-
-.go-to-switch h2 {
-    
 }
 
 .go-to-switch>.bottone {
@@ -735,18 +730,21 @@ img.flag-img {
         margin-left: 30px;
     }
 
-    
+    input[type="checkbox"]{
+        visibility: collapse;
+    }
 
-    .hamburger:hover {
+
+    .input:checked ~ *aside {
         display: block;
         width: 100vw;
         height: 100vh;
         background-color: black;
         color: red;
     }
-    .hamburger > aside::after + .hamburger:hover {
-        display: block;
-    }
+
+    
+    
 
     .hamburger hr {
         color: white;
@@ -834,7 +832,7 @@ img.flag-img {
     }
 
     .third-grid {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         justify-items: flex-start;
 
     }
