@@ -530,11 +530,20 @@ hr {
 }
 
 .news-section1 {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
     font-family: var(--mus-500);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
+.news-section1> div {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+}
+
 
 .p-news {
     font-weight: 800;
@@ -542,10 +551,21 @@ hr {
     cursor: pointer;
 }
 
-.section-news-card {
+.section-ns-cd {
     display: flex;
     gap: 1rem;
-    /* grid-template-columns: repeat(4, auto); */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div[class^="news-cd"] {
+    max-width: 280px;
+    min-width: 140;
+}
+
+img[alt^="card-item"] {
+    width: 280px;
+    border-radius: 14px;
 }
 
 .news-button {
@@ -622,7 +642,7 @@ div [class^="tf"] {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .top-footer>div>h4 {
@@ -649,8 +669,8 @@ div [class^="tf"] {
     background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    height: 25rem;
+    gap: 0.5rem 4rem;
+    min-height: 25rem;
     flex-wrap: wrap;
 }
 
@@ -661,9 +681,15 @@ img.flag-img {
 
 .top-footer>div>ul>li {
     list-style-type: none;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: 12px;
     cursor: pointer;
+    padding-left: 0px;
+}
+
+.top-footer>div>ul {
+    padding: 0;
+    margin: 0;
 }
 
 .footer {
