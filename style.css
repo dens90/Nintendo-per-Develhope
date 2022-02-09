@@ -530,18 +530,61 @@ hr {
 }
 
 
+.news h2 {
+    margin-left: 2.5rem;
+}
+
+.news-section1 {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+    font-family: var(--mus-500);
+}
+
+.p-news {
+    font-weight: 800;
+    color: #e60012;
+    cursor: pointer;
+}
+
+.section-news-card {
+    display: flex;
+    gap: 1rem;
+    /* grid-template-columns: repeat(4, auto); */
+}
+
+.news-button {
+    display: flex;
+    justify-content: center;
+}
+
+.news-bt > h3, code{
+    height: 4rem;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #e60012;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    border-radius: 9px;
+    width: 300px;
+    font-size: 20px;
+    font-family: var(--mus_700);
+    display: flex;
+    flex: 0;
+    cursor: pointer;
+}
 
 
-/* INIZIO FOOTER */
+/* INIZIO_charaters */
 
-.charaters-h3 {
-    font-size: 2rem;
-    /* font-family: var(--mus-500); */
-    margin-left: 1.5rem;
+.charaters-h2 {
+    margin-left: 2rem;
 }
 
 .flex-charaters {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     margin-bottom: 5rem;
@@ -551,8 +594,10 @@ hr {
     font-family: var(--mus-300);
     font-size: .75rem;
     line-height: 1.38;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
+
+/* FINE_charaters */
 
 div [class^="tf"] {
     display: flex;
