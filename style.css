@@ -542,7 +542,8 @@ hr {
 
 .flex-charaters {
     display: flex;
-    justify-content: space-around;
+    gap: 3rem;
+    justify-content: center;
     margin-bottom: 5rem;
 }
 
