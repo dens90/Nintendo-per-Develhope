@@ -592,6 +592,30 @@ hr {
     margin-left: 2rem;
 }
 
+.mario-fg {
+    background-size: cover;
+    border-radius: 14px;
+    background-image: url(https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/mario-bg?v=2022020814);
+}
+
+.zelda-fg {
+    background-size: cover;
+    border-radius: 14px;
+    background-image: url(https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/zelda-bg?v=2022020814https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_background?v=2022020900);
+}
+
+.animal-fg {
+    background-size: cover;
+    border-radius: 14px;
+    background-image: url(https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Animal_Crossing_A_background?v=2022020814ps://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_background?v=2022020900);
+}
+
+.kirby-fg {
+    background-size: cover;
+    border-radius: 14px;
+    background-image: url(https://assets.nintendo.com/image/upload/f_auto,q_auto/ncom/en_US/merchandising/Kirby_B_background?v=2022020900);
+}
+
 /* FINE_charaters */
 
 div [class^="tf"] {
@@ -599,7 +623,6 @@ div [class^="tf"] {
     flex-flow: column;
     flex-wrap: wrap;
     gap: 1rem;
-    /* flex : 0 1 10em; */
 }
 
 .top-footer>div>h4 {
