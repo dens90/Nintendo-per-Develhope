@@ -534,6 +534,25 @@ hr {
 
 /* INIZIO FOOTER */
 
+.charaters-h3 {
+    font-size: 2rem;
+    /* font-family: var(--mus-500); */
+    margin-left: 1.5rem;
+}
+
+.flex-charaters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.text-s p{
+    font-family: var(--mus-300);
+    font-size: .75rem;
+    line-height: 1.38;
+    margin-left: 1.5rem;
+}
+
 div [class^="tf"] {
     display: flex;
     flex-flow: column;
