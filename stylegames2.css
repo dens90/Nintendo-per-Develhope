@@ -108,7 +108,7 @@ body {
     color: #484848;
 }
 
-.bt{
+.bt {
     padding: 1.25rem;
     background-color: red;
     color: white;
@@ -117,6 +117,12 @@ body {
     border: transparent;
     border-radius: 0.625rem;
 }
+
+.btitem1 {
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;  
+}
+
 
 .bt:hover{
     background-color: darkred;
@@ -443,8 +449,9 @@ img.im{
     padding-right: 1rem;;
     display: inline;
     margin-right: 1.5;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     font-weight: bold;
+    font-family: var(--mus-700);
     padding-right: 1rem;
 }
 
@@ -715,6 +722,20 @@ p.indipendent-games {
 }
 
 .fantasy{
-    display: flex;
+    font-size: x-small;
+    padding-left: 0px;
+    margin: -9px;
 
+}
+
+.metroid img{
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    padding-inline: 13px;
+    
+}
+
+.text img{
+    width: 5rem;
 }
