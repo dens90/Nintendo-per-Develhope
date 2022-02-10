@@ -709,3 +709,12 @@ p.indipendent-games {
     opacity: 0.8;
     cursor: pointer;
 }
+
+.metroid-img img{
+    padding: 10px;
+}
+
+.fantasy{
+    display: flex;
+
+}
