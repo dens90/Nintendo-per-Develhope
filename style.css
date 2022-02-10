@@ -541,7 +541,7 @@ hr {
     align-items: center;
     flex-wrap: wrap;
     align-items: stretch;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .news-section1 > img {
@@ -554,7 +554,7 @@ hr {
 .news-section1> div {
     display: flex;
     flex-direction: column;
-    max-width: 45%;
+    max-width: 25%;
 }
 
 
