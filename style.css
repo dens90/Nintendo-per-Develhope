@@ -530,8 +530,8 @@ hr {
 }
 
 
-.news h2 {
-    margin-left: 2.5rem;
+.title-news{
+    margin-left: 28.1rem;
 }
 
 .news-section1 {
@@ -557,6 +557,9 @@ hr {
     max-width: 25%;
 }
 
+.mt{
+    padding-top: 24px;
+}
 
 .p-news {
     font-weight: 800;
@@ -564,6 +567,9 @@ hr {
     cursor: pointer;
 }
 
+.p-one{
+    padding-top: 22px;
+}
 .section-ns-cd {
     display: flex;
     gap: 1rem;
