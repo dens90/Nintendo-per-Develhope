@@ -560,12 +560,16 @@ hr {
 .mt{
     padding-top: 24px;
 }
+
 .p-news {
     font-weight: 800;
     color: #e60012;
     cursor: pointer;
 }
 
+.p-one{
+    padding-top: 22px;
+}
 .section-ns-cd {
     display: flex;
     gap: 1rem;
