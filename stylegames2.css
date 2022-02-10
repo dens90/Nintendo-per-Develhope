@@ -552,7 +552,7 @@ img.im{
     display: flex;
     justify-content: center;
     gap: 0.5rem 4rem;
-    min-height: 25rem;
+    min-height: 14rem;
     flex-wrap: wrap;
     padding: 2rem;
 }
@@ -575,7 +575,7 @@ img.flag-img {
     margin: 0;
 }
 
-.footer {
+.footer-bt {
     background-color: #3f3d3d;
     width: 100%;
     min-height: auto;
