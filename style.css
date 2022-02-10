@@ -295,7 +295,11 @@ i.fab {
     font-size: 28px;
     
 }
-
+.item2 a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
 .item4 {
     font-size: var(--tx-li)
 }
