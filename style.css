@@ -530,8 +530,8 @@ hr {
 }
 
 
-.news h2 {
-    margin-left: 2.5rem;
+.title-news{
+    margin-left: 28.1rem;
 }
 
 .news-section1 {
@@ -557,7 +557,9 @@ hr {
     max-width: 25%;
 }
 
-
+.mt{
+    padding-top: 24px;
+}
 .p-news {
     font-weight: 800;
     color: #e60012;
