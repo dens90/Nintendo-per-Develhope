@@ -593,7 +593,20 @@ img[alt^="card-item"] {
 
 /* INIZIO_charaters */
 
-.charaters-h2 {
+.Best-selling-games {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.bst-sell {
+    margin-right: 1rem;
+}
+.bts-heart {
+    padding-right: 1.3rem;
+    font-weight: 900;
+}
+
+.charaters-h2 .best-se {
     margin-left: 2rem;
 }
 
