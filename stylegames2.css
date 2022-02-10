@@ -692,4 +692,20 @@ p.indipendent-games {
 }
 
 
+.im:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
 
+.metroid img:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.centrali img:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
