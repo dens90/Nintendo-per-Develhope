@@ -535,7 +535,15 @@ hr {
     font-family: var(--mus-500);
     align-items: center;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 2rem;
+}
+
+.news-section1 > img {
+    min-width: 257px;
+    height: 145px;
+
+
 }
 
 .news-section1> div {
@@ -597,6 +605,8 @@ img[alt^="card-item"] {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 .bst-sell {
     margin-right: 1rem;
