@@ -1,0 +1,695 @@
+@font-face {
+    font-family: museum-100;
+    src: url(font/MuseoSans-100.otf);
+}
+@font-face {
+    font-family: museum-300;
+    src: url(font/MuseoSans-300.otf);
+}
+@font-face {
+    font-family: museum-500;
+    src: url(font/MuseoSans_500.otf);
+}
+@font-face {
+    font-family: museum-700;
+    src: url(font/MuseoSans_700.otf);
+}
+
+
+body {
+    font-family: museum-100, serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+/*inizio davide*/
+.linea1 img{
+    width: 8.75rem;
+    height: 3.75rem;
+}
+
+.linea1 ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: absolute;
+    top: 0.938rem;
+    right: 0.938rem;
+    gap: 1.25rem;  
+}
+
+.linea1 li{
+    display: flex;
+}
+
+.cerca{
+    display: flex;
+    position: absolute;
+    top: 0.625rem;
+    left: 10rem;
+    padding: 0.625rem;
+    padding-right: 13.75rem;
+    border: 0.063rem solid transparent;
+    font-size: 0.938rem;
+}
+
+.cerca:hover{
+    text-decoration: red underline;
+    cursor: pointer;
+}
+
+.supp a{
+    color: #484848;
+    text-decoration-line: none;
+}
+
+.supp a:hover{
+    color: red;
+}
+
+.i.fas.fa-envelope{
+    padding: 3.125rem;
+}
+
+.navigazione{
+    display: flex;
+    border: 0.063rem solid lightgray;
+    justify-content: center;
+    padding: 0.625rem;
+    gap: 3.75rem;
+}
+
+.navigazione li{
+    display: flex;
+}
+
+.gm a{
+    color: #484848;
+    text-decoration-line: none;
+}
+
+.gm a:hover{
+    color: red;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    gap: 60%;
+    margin: 1.25rem;
+}
+
+.game{
+    font-size: 2.5rem;
+    color: #484848;
+}
+
+.bt{
+    padding: 1.25rem;
+    background-color: red;
+    color: white;
+    font-size: 0.938rem;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 0.625rem;
+}
+
+.bt:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+picture>img{
+    width: 100%;
+    height: auto;
+}
+
+.av{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem; 
+    font-size: 1.25rem;
+    margin: 0.625rem; 
+    color: #484848; 
+}
+
+.un{
+    padding: 0.313rem;
+    font-size: 0.625rem;
+    color: #484848;
+}
+
+.sh{
+    border: 1px solid rgb(247, 243, 243);
+    background-color: rgb(247, 243, 243);
+    padding: 60px;
+}
+
+.cerca1{
+    border: 0.063rem solid transparent;
+    padding: 0.625rem;
+    width: 40%;
+    font-size: 0.938rem;
+}
+
+.cerca1:hover{
+    color: red;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.sh1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 1.875rem;
+    color: #484848;
+}
+
+.gm1 ul{
+    
+    display: flex;
+    gap: 1.25rem;
+}
+
+.gm11{
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+}
+
+.gm3{
+    display: flex;
+}
+
+.gm3 a{
+    display: flex;
+    text-decoration-line: none;
+    color: #484848;
+}
+
+.gm4{
+    border-radius: 0.625rem;
+    border: 0.063rem solid red;
+    padding: 0.938rem;
+}
+
+.gm4:hover{
+    background-color: lightgrey;
+    padding: 1.25rem;
+}
+
+.nt{
+    display: flex;
+    padding: 1.875rem;
+    padding-left: 4.5rem;
+    gap: 1.875rem;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #484848;
+}
+
+.nt a{
+    color: red;
+    text-decoration-line: none;
+    font-size: 1.125rem;
+}
+
+.nt a:hover{
+    color: darkred;
+    text-decoration-line: underline;
+}
+
+.carosello1{
+    display: flex;
+}
+
+.carosello1di2{
+    margin-left: 0.938rem;
+    width: 20%;
+}
+
+.carosello1di3{ 
+    width: 20%;
+}
+
+.carosello1di4{  
+    width: 20%;
+}
+
+.carosello1di5{ 
+    width: 20%;
+}
+
+.carosello1di6{ 
+    width: 20%;
+}
+
+.im1di2{
+    border-radius: 0.625rem;
+    width: 15.625rem;
+}
+
+.p1{
+    padding: 0.313rem;
+    font-size: 0.938rem;
+    color: #484848;
+    cursor: default;
+}
+
+.im1di2:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.p2{
+    font-size: 1.25rem;
+    inline-size: max-content;
+}
+
+.p2:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.p3{
+    margin-top: 0.313rem;
+    border-color: red;
+    width: 7.5rem;
+}
+
+.p4{
+    inline-size: max-content;
+    font-size: 0.875rem;
+    cursor: default;
+}
+
+.p5{
+    font-size: 1.25rem;
+}
+
+.mz{
+    text-align: center;
+}
+
+.mz img{
+    margin: 1.25rem;
+    border-radius: 0.313rem;
+    
+}
+
+.mz img:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mz1{
+    display: flex;
+    justify-content: center;
+}
+
+.mz1>img{
+    margin: 1.25rem;
+    border-radius: 0.313rem;
+}
+
+.mz1 img:hover{
+    color: darkgray;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mz2{
+    width: 34.813rem;
+    height: 19.75rem;
+}
+
+i.far.fa-heart.cuore{
+    color: red;
+    margin-left: 1.875rem;
+    font-size: 1.25rem;
+}
+
+i.fas.fa-envelope.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-heart.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-user.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-gamepad.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-headset.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-newspaper.tas1{
+    margin-right: 0.313rem;
+}
+
+i.fas.fa-star.tas1{
+    margin-right: 0.313rem;
+}
+
+/*inizio simone*/
+.carosello {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    line-height: 2.5rem;
+}
+a.titoli {
+    font-family: museum-500, serif;
+}
+p.numeri {
+    font-family: museum-300, serif;
+}
+p.nintendo {
+    color: rgb(48, 48, 48)
+}
+.img-container {
+    margin-left: 10px;
+    gap: 10px;
+    padding: 6px;
+    padding-right: 4px;
+
+}
+
+img.im{
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.im {
+    width: 100%;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.form {
+    max-width: 290px;
+}
+
+.cl {
+    display: inline-block;
+    gap: 20px;
+    padding: 1rem;
+    padding-right: 50rem;
+
+}
+
+.cl h2 {
+    padding-inline: 50px;
+    color: rgb(48, 48, 48);
+    font-family: museum-500, serif;
+}
+
+.cl a{
+    padding-right: 50px;
+}
+
+.metroid img {
+    padding-top: 40px;
+    width: 100%;
+    height: auto;
+
+}
+
+.metroid >.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.p-metroid {
+    
+    padding-right: 1rem;;
+    display: inline;
+    margin-right: 1.5;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.metroid-button > button {
+    display: block;
+    position: relative;
+    text-align: center;
+    position: relative;
+    font-size: 1.1rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: red;
+    color: rgb(218, 205, 205);
+}
+
+.img-container, form {
+    color: rgb(48, 48, 48);
+}
+
+.img-container, a {
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    ;
+}
+
+.img-container .titoli:hover {
+    color: red;
+    transition: 1s;
+}
+
+.item-ind {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+
+}
+
+.radius {
+    border-radius: 5px;
+}
+
+.centrali .indipendente {
+    padding-left: 170px;
+    font-size: x-large;
+
+}
+
+
+.centrali {
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.contenitore .cl a {
+    color: red;
+    font-size: 1.3125rem;
+
+}
+
+.contenitore .cl a:hover {
+    color: rgb(141, 14, 14);
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
+
+.img-container .form .nintendo {
+    text-transform: capitalize;
+    text-decoration: underline red;
+    text-underline-position: under;
+
+}
+
+.carosellodue {
+    padding-left: 20px;
+    display: flex;
+    --image-fit: contain;
+    --image-background-color: #dadada;
+}
+
+.change-r {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.top-footer {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem 4rem;
+    min-height: 25rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+img.flag-img {
+    width: 1.2rem;
+    height: 0.7rem;
+}
+
+.top-footer>div>ul>li {
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 0px;
+}
+
+.top-footer>div>ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    background-color: #3f3d3d;
+    width: 100%;
+    min-height: auto;
+}
+
+.link-cont a {
+    font-size: 1rem;
+    font-family: var(--mus-700);
+    text-decoration: none;
+    font-weight: bolder;
+    color: #ffffffd7;
+}
+
+.copyright p {
+    font-family: var(--mus-100);
+    color: #ffffffc9;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.38;
+    margin: 0.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.social-button button {
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0.4rem;
+    padding: 0;
+    border-style: none;
+    border-radius: 0.4em;
+}
+
+.fa-brands {
+    color: white;
+    border-radius: 0.2em;
+    padding: 0.4em;
+}
+
+.block1 {
+    display: grid;
+    padding: 10px;
+    justify-content: center;
+}
+
+.left-block {
+    display: grid;
+    padding: 0px;
+    justify-content: center;
+}
+
+.section1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px 80px;
+    text-align: center;
+    padding-top: 19px;
+
+}
+
+.link-cont {
+    font-family: var(--mus-700);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 17px;
+    padding-bottom: 9px;
+}
+
+.block2 {
+    margin-top: 11px;
+}
+
+.block3 {
+    height: 70px;
+}
+
+.social-button1 {
+    background-color: #1878f2;
+}
+
+.social-button2 {
+    background-color: #d32c69;
+}
+
+.social-button3 {
+    background-color: #1da1f2;
+}
+
+.social-button4 {
+    background-color: #ff0200;
+}
+.text {
+    padding: 1rem;
+}
+.contenitore {
+    padding: 2rem;
+}
+.centrali {
+    padding: 2rem;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    margin-left: 15%;
+}
+p.indipendent-games {
+    padding: 1rem;
+    font-family: museum-300, serif;
+}
+
+.title.indipendent {
+    display: flex;
+    width: 100%;
+    margin-left: 10%;    
+    font-family: museum-300, serif;
+    margin-inline: -60px;
+    font-size: xx-large;
+    color: #484848;
+}
+
+
+
