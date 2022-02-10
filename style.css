@@ -508,6 +508,10 @@ hr {
     
 }
 
+.see{
+    padding-left: 6px;
+    font-size: 18px;
+}
 .third-grid i {
     color: red;
 }
@@ -600,26 +604,13 @@ img[alt^="card-item"] {
 }
 
 
-/* INIZIO_charaters */
 
-.Best-selling-games {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.bst-sell {
-    margin-right: 1rem;
-}
-.bts-heart {
-    padding-right: 1.3rem;
-    font-weight: 900;
+
+.charaters-h2 {
+    margin-left: 23rem;
+    margin-bottom: 4rem;        
 }
 
-.charaters-h2 .best-se {
-    margin-left: 2rem;
-}
 
 .flex-charaters {
     display: flex;
