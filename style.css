@@ -285,7 +285,7 @@ i.fab {
 .bottone:hover {
     width: 185px;
     height: 65px;
-    background-color: rgba(199, 0, 0, 0.794);
+    background-color: darkred;
     opacity: 1;
     border-radius: 9px;
 
@@ -326,11 +326,9 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
-
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     gap: 10px;
-    
 
 }
 
@@ -472,6 +470,10 @@ hr {
 }
 .second-grid img{
     cursor: pointer;
+    border-radius: 10px;
+}
+.second-grid img:hover {
+    opacity: 0.8;
 }
 .second-grid h2 {
     padding-left: 17.3%;
@@ -512,6 +514,10 @@ hr {
     
 }
 
+
+.third-grid img:hover {
+    opacity: 0.8;
+}
 .see{
     padding-left: 6px;
     font-size: 18px;
@@ -521,6 +527,7 @@ hr {
 }
 .third-grid img{
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .bayonetta p {
@@ -551,10 +558,16 @@ hr {
 .news-section1 > img {
     min-width: 257px;
     height: 145px;
-
+    
 
 }
-
+.news-section1 img{
+    cursor: pointer;
+    border-radius: 14px;
+}
+.news-section1 img:hover{
+    opacity: 0.8;
+}
 .news-section1> div {
     display: flex;
     flex-direction: column;
@@ -580,7 +593,12 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.section-ns-cd img{
+    cursor: pointer;
+}
+.section-ns-cd img:hover{
+    opacity: 0.8;
+}
 div[class^="news-cd"] {
     max-width: 280px;
     min-width: 140;
@@ -595,6 +613,7 @@ img[alt^="card-item"] {
     display: flex;
     justify-content: center;
 }
+
 
 .news-bt > h3, code{
     height: 4rem;
@@ -613,9 +632,6 @@ img[alt^="card-item"] {
     cursor: pointer;
 }
 
-
-
-
 .charaters-h2 {
     margin-left: 23rem;
     margin-bottom: 4rem;        
@@ -629,7 +645,14 @@ img[alt^="card-item"] {
     justify-content: center;
     margin-bottom: 5rem;
 }
+.flex-charaters img{
+    cursor: pointer;
+    border-radius: 10px;
+}
 
+.flex-charaters img:hover {
+    opacity: 0.8;
+}
 .text-s p{
     font-family: var(--mus-300);
     font-size: .75rem;
@@ -903,7 +926,6 @@ img.flag-img {
     }
 
     #btn-shop {
-        
         width: 180px;
         height: 60px;
     }

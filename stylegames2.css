@@ -240,7 +240,7 @@ input[type="search-input"]:hover {
 .right-box {
     display: flex;
     width: 50%;
-    height: 3.43rem;
+    align-items: center;
     justify-content: flex-end;
 
 }
