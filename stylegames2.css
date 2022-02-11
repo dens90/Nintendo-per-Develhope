@@ -544,14 +544,14 @@ img.im{
     gap: 10px;
     background-color: rgb(241, 241, 241);
     padding-bottom: 2rem;
-    padding-left: 1rem;
+    padding-left: 11rem;
 }
 
 .top-footer {
     background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: center;
-    gap: 0.5rem 4rem;
+    gap: 0.5rem 7.5rem;
     min-height: 14rem;
     flex-wrap: wrap;
     padding: 2rem;
@@ -699,36 +699,36 @@ p.indipendent-games {
 }
 
 
-.im:hover{
+.im:hover {
     color: darkgray;
     opacity: 0.8;
     cursor: pointer;
 }
 
-.metroid img:hover{
+.metroid img:hover {
     color: darkgray;
     opacity: 0.8;
     cursor: pointer;
 }
 
-.centrali img:hover{
+.centrali img:hover {
     color: darkgray;
     opacity: 0.8;
     cursor: pointer;
 }
 
-.metroid-img img{
+.metroid-img img {
     padding: 10px;
 }
 
-.fantasy{
+.fantasy {
     font-size: x-small;
     padding-left: 0px;
     margin: -9px;
 
 }
 
-.metroid img{
+.metroid img {
     width: 100%;
     height: auto;
     padding: 0%;
@@ -736,6 +736,74 @@ p.indipendent-games {
     
 }
 
-.text img{
+.text img {
     width: 5rem;
 }
+
+.buttonft {
+    width: 100%;
+    margin-left: 45%;
+}
+
+.bts-topfooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 4rem;
+
+}
+
+.bts-tf {
+    width: 19rem;
+    height: 6.5rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.bts-tf p {
+    color: red;
+    font-family: var(--mus-700);
+    margin-right: 1rem;
+    font-weight: bolder;
+}
+
+.bt-item-ft {
+    
+    padding-left: .5rem;
+    padding-right: 0.5rem;
+    font-size: 20px;
+    margin-top: 5rem;
+
+}
+
+.img-tf1 {
+    width: 95px;
+    margin-right: 14px;
+
+}
+
+.img-tf2 {
+    width: 99px;
+    margin-right: 34px;
+
+}
+
+.img-tf3 {
+    width: 72px;
+    margin-right: 39px;
+
+}
+
+.bts-tf:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+
