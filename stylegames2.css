@@ -26,8 +26,9 @@ body {
     box-sizing: border-box;
     overflow: visible;
 }
-/*inizio davide*/
-.linea1 img{
+/*inizio davide footer*/
+
+/* .linea1 img{
     width: 8.75rem;
     height: 3.75rem;
 }
@@ -94,7 +95,226 @@ body {
 
 .gm a:hover{
     color: red;
+} */
+
+/*Fine davide footer*/
+
+/* inizio footer index */
+:root {
+    --tx-a: 12px;
+    --tx-li: 14px;
+    --tx-span: 14px;
+    --tx-p: 18px;
+    --tx-h1: 38px;
+    --tx-h2: 28px;
+    --tx-h3: 19px;
+    --tx-white: rgb(255, 255, 255);
+    --color-text: rgb(77, 75, 75);
+    --mus-100: MuseoSans-100;
+    --mus-300: MuseoSans-300;
+    --mus_500: MuseoSans-500;
+    --mus_700: MuseoSans-700;
 }
+
+.tx-white {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    font-size: var(--tx-a);
+}
+
+li {
+    font-size: var(--tx-li);
+}
+
+span {
+    font-size: var(--tx-span);
+}
+
+p {
+    font-size: var(--tx-p);
+    font-family: var(--mus-100);
+}
+
+h1 {
+    font-size: var(--tx-h1);
+}
+
+h2 {
+    font-size: var(--tx-h2);
+    font-family: var(--mus_500);
+}
+
+h3 {
+    font-size: var(--tx-h3);
+    font-family: var(--mus_500);
+}
+
+body {
+    font-family: MuseoSans-100;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+
+}
+/* ------------------- */
+.nav-superiore {
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    border-bottom: 1px solid lightgrey;
+    gap: 6rem;
+    position: sticky;
+}
+
+.left-box {
+    display: flex;
+    width: 50%;
+    height: 3.5rem;
+}
+
+.logo {
+    width: 17%;
+    height: 3.43rem;
+    background-color: red;
+    justify-content: center;
+}
+
+.logo>img {
+    width: 65%;
+    margin-left: 20px;
+    height: 3.43rem;
+}
+
+.search {
+    width: 50%;
+    display: flex;
+    border-bottom: 1px solid black;
+    height: 30px;
+    margin: 12px 15px 10px 26px;
+}
+
+.search-input {
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="search-input"] {
+    border: none;
+    margin-left: 5px;
+    width: 270px;
+}
+
+.search:hover,
+input[type="search-input"]:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.search::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002";
+}
+
+
+.hamburger,
+.log {
+    display: none;
+}
+
+.right-box {
+    display: flex;
+    width: 50%;
+    height: 3.43rem;
+    justify-content: flex-end;
+
+}
+
+.interact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.interact ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-right: 2rem;
+    ;
+}
+
+.interact * {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+.right-box li:hover {
+    cursor: pointer;
+    color: red
+}
+.right-box a:hover {
+    cursor: pointer;
+    color: red
+}
+i.fas:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/* NAVBAR INFERIORE */
+
+.nav-inferiore {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+}
+
+.wrapper-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-family: var(--mus-300);
+    font-weight: bold;
+    
+}
+.wrapper-nav a{
+    text-decoration: none;
+}
+.wrapper-nav a:hover{
+    cursor: pointer;
+    color: red;
+}
+.wrapper-nav li:hover {
+    cursor: pointer;
+    color: red;
+}
+
+i.fas,
+i.fab {
+    margin-right: 5px;
+    font-size: var(--tx-p);
+}
+
+/* fine nav index */
 
 .top{
     display: flex;
